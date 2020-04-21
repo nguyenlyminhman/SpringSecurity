@@ -1,7 +1,7 @@
-package com.spring.SpringSecurity.controller;
+package com.spring.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class PublicController {
 }
