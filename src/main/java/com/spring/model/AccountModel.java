@@ -3,9 +3,10 @@ package com.spring.model;
 public class AccountModel {
 
     private int id;
-    private String fullname;
     private String accountId;
     private String password;
+    private boolean admin;
+    private boolean blocked;
 
     public int getId() {
         return id;
@@ -13,14 +14,6 @@ public class AccountModel {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getFullname() {
-        return fullname;
-    }
-
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
     }
 
     public String getAccountId() {
@@ -39,4 +32,19 @@ public class AccountModel {
         this.password = password;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
+    }
 }

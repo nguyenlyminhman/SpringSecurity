@@ -18,6 +18,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/**/security/**").authenticated() // allow all at home page
                 .antMatchers("/**/public/**").permitAll();
-
     }
 }

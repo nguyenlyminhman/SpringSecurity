@@ -6,14 +6,15 @@
         <result column="id" property="id"/>
         <result column="accountid" property="accountId"/>
         <result column="password" property="password"/>
-        <result column="fullname" property="fullname"/>
+        <result column="isadmin" property="admin"/>
+        <result column="isblocked" property="blocked"/>
     </resultMap>
 
     <select id="getLoginAccount"  parameterType="com.spring.model.AccountModel" resultType="int">
-        SELECT * FROM public.account where  accountid = #{accountId} and password = #{password}
+        SELECT * FROM public.accountinfo where  accountid = #{accountId} and password = #{password}
     </select>
 
     <select id="getAll" resultMap="AllUser">
-        SELECT * FROM public.account
+        SELECT * FROM public.accountinfo
     </select>
 </mapper>
